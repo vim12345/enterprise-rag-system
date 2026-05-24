@@ -6,6 +6,10 @@
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
 ![Tests](https://img.shields.io/badge/Tests-17%20passed-brightgreen)
 ![RBAC](https://img.shields.io/badge/Security-RBAC%20%7C%200%20leaks-red)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit)](https://vimal-enterprise-rag.streamlit.app)
+[![API Docs](https://img.shields.io/badge/API%20Docs-Swagger-85EA2D?logo=swagger)](https://enterprise-rag-api.onrender.com/docs)
+
+> 🚀 **[Live Demo →](https://vimal-enterprise-rag.streamlit.app)**  &nbsp;|&nbsp;  📡 **[API Docs →](https://enterprise-rag-api.onrender.com/docs)**  &nbsp;|&nbsp;  ⭐ Star this repo if useful!
 
 A **production-grade Retrieval-Augmented Generation (RAG) system** for enterprise environments — featuring hybrid semantic retrieval, MMR diversity reranking, two-layer RBAC, hallucination risk assessment, a FastAPI REST API, Docker deployment, 17-test suite, and a full evaluation framework with Precision@K, MRR, and NDCG metrics.
 
