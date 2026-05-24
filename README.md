@@ -50,13 +50,16 @@ User Query
 ## Screenshots
 
 ### Streamlit UI — Query with Source Attribution
-![Streamlit UI](screenshots/streamlit_demo.png)
+![Streamlit UI]<img width="1913" height="971" alt="Screenshot 2026-05-24 205318" src="https://github.com/user-attachments/assets/92645ff6-6a7a-401d-9922-9ca893854dca" />
+
 
 ### FastAPI Swagger Docs
-![API Docs](screenshots/api_docs.png)
+![API Docs]<img width="1916" height="963" alt="Screenshot 2026-05-24 205335" src="https://github.com/user-attachments/assets/9e7b4b5a-2c3b-421a-a2f0-81affc9bd8fd" />
+
 
 ### Evaluation Results
-![Evaluation](screenshots/evaluation.png)
+![Evaluation]<img width="712" height="865" alt="Screenshot 2026-05-24 205649" src="https://github.com/user-attachments/assets/8ce2eaa6-b1a8-4d87-a2c6-62d909a9ab24" />
+
 
 ---
 
