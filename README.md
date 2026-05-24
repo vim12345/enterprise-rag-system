@@ -310,7 +310,7 @@ python tests/test_rag.py
 
 ## Resume Bullet Points
 
-> **Enterprise RAG Intelligence System** | [GitHub] | Python · NumPy · FastAPI · Docker · Claude API
+> **Enterprise RAG Intelligence System** | [https://github.com/vim12345/enterprise-rag-system.git] | Python · NumPy · FastAPI · Docker · Claude API
 > - Built production-grade RAG pipeline with hybrid TF-IDF + cosine retrieval and MMR diversity reranking across 10 multi-format enterprise docs (PDF, CSV, JSON)
 > - Engineered two-layer RBAC (clearance hierarchy + role whitelist) — blocked 20 unauthorized chunk accesses across all test scenarios with zero data exposure
 > - Shipped full REST API (FastAPI), Docker deployment, 17-test suite, and evaluation framework reporting MRR=0.833, NDCG@5=0.799, P95 latency=2.4ms
@@ -320,4 +320,4 @@ python tests/test_rag.py
 ## Author
 
 **Vimal Kumar** — Machine Learning Engineer  
-vk2699945@gmail.com | [LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
+vk2699945@gmail.com | [LinkedIn](https://github.com/vim12345) | [GitHub](https://www.linkedin.com/in/vimal-kumar0/)
