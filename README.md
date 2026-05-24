@@ -235,7 +235,7 @@ SECURITY METRICS
   RBAC Effectiveness   : 100%
 
 LATENCY (in-memory)
-  P50 : 1.7ms   P95 : 2.4ms   P99 : 2.4ms
+  P50 : 2.1ms   P95 : 3.5ms   P99 : 3.5ms Avg : 2.5ms
 ```
 
 Run it yourself:
