@@ -1,0 +1,8 @@
+user_id,name,role,department,clearance_level
+U001,Alice Chen,admin,executive,restricted
+U002,Bob Martinez,hr,hr,confidential
+U003,Carol Singh,finance,finance,confidential
+U004,Dave Kim,engineering,engineering,internal
+U005,Eve Okonkwo,legal,legal,restricted
+U006,Frank Liu,analyst,operations,internal
+U007,Grace Patel,guest,external,public

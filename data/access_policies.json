@@ -1,0 +1,19 @@
+{
+  "clearance_hierarchy": [
+    "public",
+    "internal",
+    "confidential",
+    "restricted"
+  ],
+  "role_clearance_map": {
+    "admin": "restricted",
+    "legal": "restricted",
+    "finance": "confidential",
+    "hr": "confidential",
+    "engineering": "internal",
+    "analyst": "internal",
+    "guest": "public"
+  },
+  "default_policy": "deny",
+  "note": "Two-layer RBAC: clearance rank + per-document role whitelist"
+}

@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "retrieval": {
+      "avg_precision_at_k": 0.645,
+      "avg_recall_at_k": 1.7,
+      "avg_mrr": 0.833,
+      "avg_ndcg_at_k": 0.799
+    },
+    "generation": {
+      "avg_confidence": 0.65,
+      "conf_pass_rate": 100.0,
+      "low_risk_pct": 70.0,
+      "medium_risk_pct": 20.0,
+      "high_risk_pct": 10.0
+    },
+    "security": {
+      "total_denied_chunks": 20,
+      "unauthorized_exposures": 0,
+      "rbac_effectiveness": "100%"
+    },
+    "latency": {
+      "p50_ms": 1.4,
+      "p95_ms": 2.7,
+      "p99_ms": 2.7,
+      "avg_ms": 1.8
+    }
+  },
+  "cases": [
+    {
+      "case": 1,
+      "user": "U002",
+      "query": "What are the salary bands and bonus percentag",
+      "relevant": [
+        "HR-POL-001"
+      ],
+      "retrieved": [
+        "HR-POL-001",
+        "HR-POL-001"
+      ],
+      "precision_at_k": 1.0,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "confidence": 0.65,
+      "hallucination_risk": "LOW",
+      "latency_ms": 0.9,
+      "denied": 0,
+      "conf_pass": true
+    },
+    {
+      "case": 2,
+      "user": "U002",
+      "query": "Which department has the highest attrition ra",
+      "relevant": [
+        "HR-HC-002"
+      ],
+      "retrieved": [
+        "HR-HC-002",
+        "HR-HC-002"
+      ],
+      "precision_at_k": 1.0,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "confidence": 0.89,
+      "hallucination_risk": "LOW",
+      "latency_ms": 2.7,
+      "denied": 5,
+      "conf_pass": true
+    },
+    {
+      "case": 3,
+      "user": "U003",
+      "query": "What was the total revenue and EBITDA in Q1 2",
+      "relevant": [
+        "FIN-QR-001"
+      ],
+      "retrieved": [
+        "FIN-QR-001",
+        "FIN-INV-002",
+        "FIN-QR-001",
+        "FIN-INV-002"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.92,
+      "confidence": 1.0,
+      "hallucination_risk": "LOW",
+      "latency_ms": 1.1,
+      "denied": 0,
+      "conf_pass": true
+    },
+    {
+      "case": 4,
+      "user": "U003",
+      "query": "Which vendor invoices are pending approval?",
+      "relevant": [
+        "FIN-INV-002"
+      ],
+      "retrieved": [
+        "FIN-INV-002",
+        "FIN-INV-002"
+      ],
+      "precision_at_k": 1.0,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "confidence": 0.41,
+      "hallucination_risk": "MEDIUM",
+      "latency_ms": 2.2,
+      "denied": 6,
+      "conf_pass": true
+    },
+    {
+      "case": 5,
+      "user": "U004",
+      "query": "What databases and ML models does the platfor",
+      "relevant": [
+        "ENG-ARCH-001"
+      ],
+      "retrieved": [
+        "ENG-INC-002",
+        "ENG-INC-002",
+        "ENG-ARCH-001",
+        "ENG-INC-002"
+      ],
+      "precision_at_k": 0.25,
+      "recall_at_k": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "confidence": 1.0,
+      "hallucination_risk": "LOW",
+      "latency_ms": 2.0,
+      "denied": 1,
+      "conf_pass": true
+    },
+    {
+      "case": 6,
+      "user": "U004",
+      "query": "What caused the Redis outage and what was the",
+      "relevant": [
+        "ENG-INC-002"
+      ],
+      "retrieved": [
+        "ENG-INC-002",
+        "ENG-SYS-003",
+        "ENG-INC-002",
+        "ENG-ARCH-001",
+        "ENG-SYS-003"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.92,
+      "confidence": 0.84,
+      "hallucination_risk": "LOW",
+      "latency_ms": 2.0,
+      "denied": 0,
+      "conf_pass": true
+    },
+    {
+      "case": 7,
+      "user": "U005",
+      "query": "What material weakness was found in the SOC2 ",
+      "relevant": [
+        "LEG-SOC2-002"
+      ],
+      "retrieved": [
+        "LEG-SOC2-002",
+        "LEG-PRIV-001",
+        "LEG-SOC2-002",
+        "LEG-PRIV-001"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.92,
+      "confidence": 0.61,
+      "hallucination_risk": "LOW",
+      "latency_ms": 0.9,
+      "denied": 0,
+      "conf_pass": true
+    },
+    {
+      "case": 8,
+      "user": "U005",
+      "query": "What is the data retention period for custome",
+      "relevant": [
+        "LEG-PRIV-001"
+      ],
+      "retrieved": [
+        "LEG-PRIV-001",
+        "FIN-QR-001",
+        "LEG-SOC2-002",
+        "HR-KB-003",
+        "LEG-PRIV-001"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 2.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.85,
+      "confidence": 0.69,
+      "hallucination_risk": "LOW",
+      "latency_ms": 3.0,
+      "denied": 5,
+      "conf_pass": true
+    },
+    {
+      "case": 9,
+      "user": "U007",
+      "query": "What are the salary ranges for employees?",
+      "relevant": [],
+      "retrieved": [],
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 0.0,
+      "ndcg_at_k": 0.0,
+      "confidence": 0.0,
+      "hallucination_risk": "HIGH",
+      "latency_ms": 1.4,
+      "denied": 3,
+      "conf_pass": true
+    },
+    {
+      "case": 10,
+      "user": "U001",
+      "query": "Give me a summary of Q1 financials and compli",
+      "relevant": [
+        "FIN-QR-001",
+        "LEG-SOC2-002"
+      ],
+      "retrieved": [
+        "LEG-SOC2-002",
+        "ENG-SYS-003",
+        "LEG-PRIV-001",
+        "FIN-QR-001",
+        "ENG-INC-002"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.877,
+      "confidence": 0.4,
+      "hallucination_risk": "MEDIUM",
+      "latency_ms": 1.4,
+      "denied": 0,
+      "conf_pass": true
+    }
+  ]
+}

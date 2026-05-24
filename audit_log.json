@@ -1,0 +1,180 @@
+{
+  "log": [
+    {
+      "ts": "2026-05-24T20:37:24.396432",
+      "user": "Bob Martinez",
+      "role": "hr",
+      "query": "What are the salary bands, bonus percentages, and equity grants for each level?",
+      "dept_hint": "hr",
+      "retrieved": 2,
+      "denied": 0,
+      "confidence": 1.0,
+      "risk": "LOW",
+      "latency_ms": 3.2,
+      "sources": [
+        "HR-POL-001",
+        "HR-POL-001"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.398865",
+      "user": "Carol Singh",
+      "role": "finance",
+      "query": "What was total revenue, EBITDA margin, ARR, and NRR in Q1 2025?",
+      "dept_hint": "finance",
+      "retrieved": 4,
+      "denied": 0,
+      "confidence": 1.0,
+      "risk": "LOW",
+      "latency_ms": 1.9,
+      "sources": [
+        "FIN-QR-001",
+        "FIN-INV-002",
+        "FIN-QR-001",
+        "FIN-INV-002"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.400429",
+      "user": "Dave Kim",
+      "role": "engineering",
+      "query": "What databases and ML models does the platform use, and what are the SLOs?",
+      "dept_hint": null,
+      "retrieved": 6,
+      "denied": 1,
+      "confidence": 0.95,
+      "risk": "LOW",
+      "latency_ms": 3.0,
+      "sources": [
+        "ENG-INC-002",
+        "ENG-ARCH-001",
+        "ENG-INC-002",
+        "ENG-ARCH-001",
+        "ENG-ARCH-001"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.404683",
+      "user": "Eve Okonkwo",
+      "role": "legal",
+      "query": "What material weaknesses were found in the SOC2 audit and were they fixed?",
+      "dept_hint": "legal",
+      "retrieved": 4,
+      "denied": 0,
+      "confidence": 0.54,
+      "risk": "MEDIUM",
+      "latency_ms": 0.8,
+      "sources": [
+        "LEG-SOC2-002",
+        "LEG-PRIV-001",
+        "LEG-SOC2-002",
+        "LEG-PRIV-001"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.406691",
+      "user": "Dave Kim",
+      "role": "engineering",
+      "query": "What caused the Redis outage, how long did it last, and what was the revenue impact?",
+      "dept_hint": "engineering",
+      "retrieved": 5,
+      "denied": 0,
+      "confidence": 0.68,
+      "risk": "LOW",
+      "latency_ms": 0.9,
+      "sources": [
+        "ENG-INC-002",
+        "ENG-SYS-003",
+        "ENG-INC-002",
+        "ENG-ARCH-001",
+        "ENG-SYS-003"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.407690",
+      "user": "Grace Patel",
+      "role": "guest",
+      "query": "What is the employee compensation policy and salary ranges?",
+      "dept_hint": "hr",
+      "retrieved": 0,
+      "denied": 3,
+      "confidence": 0.0,
+      "risk": "HIGH",
+      "latency_ms": 0.8,
+      "sources": []
+    },
+    {
+      "ts": "2026-05-24T20:37:24.410544",
+      "user": "Bob Martinez",
+      "role": "hr",
+      "query": "Which department has the highest attrition rate and what is the company benchmark?",
+      "dept_hint": null,
+      "retrieved": 2,
+      "denied": 5,
+      "confidence": 0.93,
+      "risk": "LOW",
+      "latency_ms": 2.1,
+      "sources": [
+        "HR-HC-002",
+        "HR-HC-002"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.410544",
+      "user": "Carol Singh",
+      "role": "finance",
+      "query": "Which vendor invoices are pending approval and what is the outstanding amount?",
+      "dept_hint": null,
+      "retrieved": 2,
+      "denied": 7,
+      "confidence": 0.38,
+      "risk": "MEDIUM",
+      "latency_ms": 3.0,
+      "sources": [
+        "FIN-INV-002",
+        "FIN-INV-002"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.416542",
+      "user": "Frank Liu",
+      "role": "analyst",
+      "query": "What is the API gateway uptime, P95 latency, and how many deployments ran this week?",
+      "dept_hint": "engineering",
+      "retrieved": 2,
+      "denied": 5,
+      "confidence": 0.83,
+      "risk": "LOW",
+      "latency_ms": 2.1,
+      "sources": [
+        "ENG-SYS-003",
+        "ENG-SYS-003"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:37:24.417546",
+      "user": "Alice Chen",
+      "role": "admin",
+      "query": "Summarize Q1 financial performance, headcount changes, and any open compliance issues.",
+      "dept_hint": "hr",
+      "retrieved": 4,
+      "denied": 0,
+      "confidence": 0.35,
+      "risk": "MEDIUM",
+      "latency_ms": 0.8,
+      "sources": [
+        "HR-HC-002",
+        "HR-KB-003",
+        "HR-KB-003",
+        "HR-HC-002"
+      ]
+    }
+  ],
+  "stats": {
+    "total_queries": 10,
+    "avg_confidence": 0.67,
+    "avg_latency_ms": 1.9,
+    "total_denied": 21,
+    "low_risk_pct": 60.0
+  }
+}
